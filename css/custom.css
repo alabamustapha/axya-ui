@@ -1,0 +1,183 @@
+/* Some Vendor Styles Override */
+
+/*
+-------------------------
+ =utility
+-------------------------
+ */
+.icon-circle{
+  display:inline-block;
+  width:10px;
+  height: 10px;
+  border-radius: 5px;
+}
+ .shadow{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+ .btn-rounded, {
+     border-radius: 50px;
+ }
+ .circle{
+     border-radius: 50%;
+ }
+ /*  */
+.inline{
+    display: inline;
+}
+.inline-block{
+    display:inline-block;
+}
+.block{
+  display: block;
+}
+/*  */
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+
+/* position */
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+
+/* typography */
+.text-bold{
+  font-weight: 700;
+}
+.text-grey{
+  color: #adadad;
+}
+
+/* border */
+.b-1{
+  border-width:1px !important;
+}
+.b-2{
+  border-width:2px !important;
+}
+.b-3{
+  border-width:3px !important;
+}
+.b-5{
+  border-width:5px !important;
+}
+.border{
+  /* border-width: 2px ; */
+  border-style: solid ;
+  border-color: rgba(0,0,0,0.2);
+}
+.bb{
+  border:none;
+  border-bottom:solid rgba(0,0,0,0.2);
+}
+.br{
+  border:none;
+  border-right: solid rgba(0,0,0,0.2);
+}
+.bl{
+  border:none;
+  border-left: solid rgba(0,0,0,0.2);
+}
+.bt{
+  border:none;
+  border-right: solid rgba(0,0,0,0.2);
+}
+.brt{
+  border:none;
+  border-right: solid rgba(0,0,0,0.2);
+  border-top: solid rgba(0,0,0,0.2);
+}
+.brb{
+  border:none;
+  border-right: solid rgba(0,0,0,0.2);
+  border-bottom: solid rgba(0,0,0,0.2);
+}
+.blt{
+  border:none;
+  border-left: solid rgba(0,0,0,0.2);
+  border-top: solid rgba(0,0,0,0.2);
+}
+.blb{
+  border:none;
+  border-left: solid rgba(0,0,0,0.2);
+  border-bottom: solid rgba(0,0,0,0.2);
+}
+/* padding */
+
+/*
+ * =miscellaneous
+ * -------------------------
+ */
+
+ a, a:hover{
+    text-decoration:none;
+    color:#fff;
+ }
+ 
+
+/*
+ * =nav: main top navigation menu
+ * -------------------------
+ */
+
+.brand-link{
+  color: #14aee1 !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav-btn{
+  padding: 10px 20px !important;
+}
+.nav-btn:hover{
+    color:#fff !important;
+}
+
+
+/*
+ * =form: login and registration
+ * -------------------------
+ */
+
+.button-submit{
+   width:100%;
+   display: block;
+   padding: 10px 30px;
+   background-color: #14aee1;
+   color:#fff;
+   border:none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition-duration: 0.4s;
+}
+ .button-submit:hover{
+   /* background-color: #0f97c0; */
+   background-color: #fff;
+   color:#14aee1;
+   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+ .auth-input{
+   margin-bottom:2rem;
+}
+
+.auth-input input{
+  border:none;
+  /* border-bottom: 2px solid rgba(0 ,0 ,0, 0.3);
+  border-radius:0px; */
+  background-color: rgba(0, 0, 0, 0.06);
+  padding:1.6em  !important;
+}
+.auth-input input:focus{
+  border: 1px solid #14aee1;
+  border-color: #14aee1;
+  box-shadow: none;
+}
+.form-head-text{
+ 
+}
