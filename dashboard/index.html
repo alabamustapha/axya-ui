@@ -136,11 +136,18 @@
                             </ul>
                 
                             <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-info relative">
+                                <li class="nav-item relative">
+                                    <a href="#" class="nav-link text-info" id="notification-toggle">
                                         <i class="fa fa-bell fa-2x"></i>
                                         <span class="badge badge-light notification-count">4</span>
                                     </a>
+                                    <!-- <div class="notification-dropdown shadow rounded">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni laboriosam, numquam dolorem possimus quia placeat consectetur alias laudantium aliquam accusantium voluptatum porro fugit delectus! Veritatis dolorem illo voluptatum quisquam?
+                                            </div>
+                                        </div>
+                                    </div> -->
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -148,9 +155,9 @@
                                         Alaba Mustapha
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                        <hr>
+                                        <a class="dropdown-item" href="#">My profile</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Log Out</a>
                                     </div>
                                 </li>
@@ -549,123 +556,7 @@
                         </div>
                         <!-- end container -->
 
-                        <div class="box">
-                            <div class="box-title">
-                                <h5>Transactions</h5>
-                                <!-- <small class="text-muted">simple login form example</small> -->
-                            </div>
-                            <div class="box-content">
-                                <!-- START ROW -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-9">
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">Methods</th>
-                                                                <th scope="col">Picture</th>
-                                                                <th scope="col">Amount</th>
-                                                                <th scope="col">Status</th>
-                                                                <th scope="col">Details</th>
-                                                                <th scope="col">Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-primary">pending</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-danger">Cancelled</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>pending</td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>pending</td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                
-                                
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label for="search">Search</label>
-                                                        <input type="search" class="form-control form-control-sm" id="search" placeholder="Keyword...">
-                                                    </div>
-                                                </form>
-                                
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                        </div>
-                        
+                      
                         
                     </div>
                 </div>
@@ -686,8 +577,7 @@
 
     <!-- Optional JavaScript -->
     <script src="../js/jquery-3.3.1.min.js" ></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script> -->
+    <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -695,6 +585,7 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
+          
 
         });
     </script>

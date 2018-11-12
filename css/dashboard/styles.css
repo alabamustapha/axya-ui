@@ -37,17 +37,7 @@ a, a:hover, a:focus {
     border: none;
 }
 
-.navbar-notification{
-    color:#00c4a7 !important; 
-}
-.notification-count{
-    position: absolute;
-    border-radius: 50%;
-    background: #fff;
-    display: inline-block;
-    top: 18px;
-    right: 5px;
-}
+
 
 .line {
     width: 100%;
@@ -79,7 +69,43 @@ h3, h4, h5 {
 }
 
 
+/* ---------------------------------------------------
+    NOTIFICATION HEADER STYLE
+----------------------------------------------------- */
 
+.notification-dropdown{
+    position: absolute;
+    top: 50px;
+    left: -250px;
+    max-width: 400px;
+    min-width: 400px;
+    display: none;
+    z-index: 9999;
+}
+.notification-dropdown::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 67%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(26, 162, 216) transparent;
+    height: 10px;
+} 
+
+
+.navbar-notification{
+    color:#00c4a7 !important; 
+}
+.notification-count{
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    top: 18px;
+    right: 5px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -92,7 +118,7 @@ h3, h4, h5 {
 #sidebar {
     min-width: 220px;
     max-width: 220px;
-    min-height: 644.183px;
+    min-height: 768px;
     /* background: rgba(14, 50, 109, 0.902); */
     background: #0d808f;
     color: #fff;
@@ -280,6 +306,10 @@ a.article, a.article:hover {
 
 
 
+
+
+
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -395,7 +425,7 @@ code {
 /* .conversation-list .pre-chat .name{
     font-weig
 } */
-.conversation-list .conversation-avatar{
+.conversation-avatar{
     position: absolute;
     left: 15px;
     top: 15px;
@@ -414,6 +444,53 @@ code {
     right: 23px;
     bottom: 5px;
 }
+
+/* CHATTING BOX */
+.chatting-box{
+    padding: 20px 0;
+}
+.chatting-box .chat-box{
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.chat-box .message-row{
+    position: relative;
+    padding: 10px 10px 0;
+}
+.chat-box .message-row .message{
+    padding-left: 5rem;
+}
+.chat-box .message-row .message span.name{
+    color: #000;
+}
+.chat-textarea{
+   padding: 20px;
+}
+.chat-textarea textarea{
+    color: #4d4d4d;
+    border:none;
+    border-radius: 5px;
+    background-color: rgba(0 , 0, 0, 0.13);
+    resize: none;
+}
+.chat-textarea textarea:focus{
+    color: #4d4d4d;
+    background-color: rgba(0 , 0, 0, 0.13);
+    border: 2px solid #c2c2c2;
+}
+/* CHAT INFO */
+.chat-info{
+    padding: 20px 15px;
+}
+.chat-info h5{
+    font-size: 16px;
+    font-weight: 800;
+}
+.chat-info .ratings{
+    color: #ffdb4a;
+}
+/* SCROLL BAR */
 
 .scroll::-webkit-scrollbar {
     width: 6px;
