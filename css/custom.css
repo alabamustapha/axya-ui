@@ -62,7 +62,7 @@ a, a:hover, a:focus {
    margin: 0 auto;
    width: 150px;
    height: 150px;
-   background-color: #000;
+   background-color: #fff;
  }
  .usercard-component .user-card .profile-image img{
    width: 150px;
@@ -94,12 +94,30 @@ a, a:hover, a:focus {
 .usercard-component .user-profile-label {
   padding: 10px;
 }
-.usercard-component .user-profile-label p{
+.user-profile-label p.name{
   color: #000;
   font-size: 18px;
   font-weight: 400;
+  margin: 0 auto;
   text-align: center;
 }
+.user-profile-label .specialty{
+  color: #888;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+}
+.user-profile-label .available{
+  color: #fff;
+  background-color: #0cb48a; 
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .user-stats{
   font-size: 16px;
 }
@@ -108,6 +126,9 @@ a, a:hover, a:focus {
 }
 .user-stats li{
  margin-bottom: 10px;
+}
+.rating span{
+  color: #ecb51e;
 }
 
 .user-info .info-bar{
@@ -127,7 +148,9 @@ a, a:hover, a:focus {
   padding: 20px;
 }
 
-
+.top-row{
+  display: flex; 
+}
 .widget-box{
   width: 200px;
   height: 200px;
@@ -183,6 +206,160 @@ a, a:hover, a:focus {
   border-radius: 5px;
   color: #676a6c;
 }
+
+.appointment{
+  padding: 10px;
+  background-color: #fff;
+  border-top: 2px solid #14aee1;
+}
+
+/*
+----------------------------------------------
+ =settings
+----------------------------------------------
+ */
+
+#settings-menu, #settings-form{
+  margin: 25px auto; 
+}
+
+#settings-menu .menu{
+  border: none;
+}
+#settings-menu .menu li a{
+  background-color: transparent;
+  color: #888;
+  font-size: 14px;
+  border: none;
+  margin-bottom: 10px;
+}
+#settings-menu .menu li a.active{
+  border: none !important;
+  border-left: 2px solid #14aee1 !important;
+  border-radius: 0;
+  color: #000;
+}
+#settings-menu .menu li a:hover{
+  color: #14aee1 !important;
+}
+
+#settings-form .settings{
+  background-color: #fff;
+  padding:40px 20px;
+  border: 1px solid #dbdbdb;
+  position: relative;
+}
+
+.settings .line-block{
+  position: absolute;
+  display: flex;
+  min-width: 100%;
+  top: 0;
+  left:0;
+  padding: 0;
+  margin:0;
+}
+.settings .line1{
+  width: 40%;
+  height: 10px;
+  background-color: rgb(19, 173, 225);
+  display: inline-block;
+  margin:0;
+}
+.settings .line2{
+  width: 30%;
+  height: 10px;
+  background-color: rgba(19, 173, 225, 0.808);
+  display: inline-block;
+  margin:0;
+}
+.settings .line3{
+  width: 20%;
+  height: 10px;
+  background-color: rgba(19, 201, 225, 0.658);
+  display: inline-block;
+   margin:0;
+}
+.settings .line4{
+  width: 10%;
+  height: 10px;
+  background-color: rgba(19, 230, 225, 0.349);
+  display: inline-block;
+   margin:0;
+}
+
+.settings form{
+  margin-bottom: 20px;
+}
+
+.settings input[type=text], .settings input[type=email], .settings input[type=password]{
+  color: #888;
+  margin: 10px auto;
+}
+.settings input[type=text]:focus, .settings input[type=email]:focus, .settings input[type=password]:focus{
+  border: 1px solid #14aee1 !important;
+  box-shadow: none !important;
+}
+.settings form .weight, .settings form .height{
+  background-color: #fff;
+  color: #097383;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative
+}
+.weight .val , .height .val{
+  position: absolute;
+  top:20px;
+  right: 20px;
+    color: #097383;
+}
+
+/*
+----------------------------------------------
+ =review
+----------------------------------------------
+ */
+
+.review-container{
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.review-header{
+  position: relative;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.review-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.p-review{
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+.review{
+  position: relative;
+  padding-top: 20px;
+  padding-left: 6rem;
+}
+.review img{
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
+.review .meta span{
+  display: block;
+}
+.review .meta span.name{
+  font-weight: 600;
+}
+
 /*
 ----------------------------------------------
  =utility
@@ -216,9 +393,11 @@ a, a:hover, a:focus {
 /*  */
 .fl{
   float:left;
+  clear: both;
 }
 .fr{
   float:right;
+  clear: both;
 }
 
 /* position */
@@ -235,6 +414,9 @@ a, a:hover, a:focus {
 }
 .text-grey{
   color: #adadad;
+}
+.text-lg{
+  font-size: 40px;
 }
 
 /* border */
@@ -363,7 +545,4 @@ a, a:hover, a:focus {
   border: 1px solid #14aee1;
   border-color: #14aee1;
   box-shadow: none;
-}
-.form-head-text{
- 
 }

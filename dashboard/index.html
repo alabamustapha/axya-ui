@@ -141,13 +141,13 @@
                                         <i class="fa fa-bell fa-2x"></i>
                                         <span class="badge badge-light notification-count">4</span>
                                     </a>
-                                    <!-- <div class="notification-dropdown shadow rounded">
+                                    <div class="notification-dropdown shadow rounded">
                                         <div class="card">
                                             <div class="card-body">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni laboriosam, numquam dolorem possimus quia placeat consectetur alias laudantium aliquam accusantium voluptatum porro fugit delectus! Veritatis dolorem illo voluptatum quisquam?
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -585,7 +585,19 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
-          
+           
+           $('#notification-toggle').click(function(){
+                $('.notification-dropdown').toggle();
+
+           });
+
+                $(document).click(function(){
+                    if($('.notification-dropdown').css('display', 'block')){
+                       
+                   $('.notification-dropdown').hide(2000);
+                //    console.log($('.notification-dropdown').css('display'));
+                    }
+                });
 
         });
     </script>
