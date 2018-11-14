@@ -232,6 +232,7 @@ a, a:hover, a:focus {
   font-size: 14px;
   border: none;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 #settings-menu .menu li a.active{
   border: none !important;
@@ -296,7 +297,7 @@ a, a:hover, a:focus {
   color: #888;
   margin: 10px auto;
 }
-.settings input[type=text]:focus, .settings input[type=email]:focus, .settings input[type=password]:focus{
+.settings input[type=text]:focus, .settings input[type=email]:focus, .settings input[type=password]:focus , .settings select:focus{
   border: 1px solid #14aee1 !important;
   box-shadow: none !important;
 }
@@ -312,6 +313,12 @@ a, a:hover, a:focus {
   top:20px;
   right: 20px;
     color: #097383;
+}
+
+.setting-box table input[type=time]{
+  border: none;
+  background-color: transparent;
+
 }
 
 /*
