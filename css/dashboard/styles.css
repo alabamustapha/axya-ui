@@ -70,6 +70,76 @@ h3, h4, h5 {
 
 
 /* ---------------------------------------------------
+    NOTIFICATION SIDEBAR STYLE
+----------------------------------------------------- */
+
+.notification-slide{
+    display: block;
+    position: fixed;
+    padding: 4rem 20px 20px;
+    top: 0;
+    right: 0;
+    height: 768px;
+    width: 0;
+    opacity: 0;
+    box-shadow: -8px 0 16px rgba(0 , 0, 0, 0.13), -4px 0 8px rgba(0 , 0, 0, 0.2);
+    z-index: 9999;
+    background: linear-gradient(45deg, #0d808f, #00d1b2 );
+}
+
+.close-btn{
+    position: absolute;
+    width: 25px;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+.crossbar1{
+    width: 2px;
+    height: 25px;
+    background-color: #fff;
+    transform: rotate(-45deg) translate(-9px, 10px) ;
+
+}
+.crossbar2{
+    width: 2px;
+    height: 25px;
+    background-color: #fff;
+    transform: 	rotate(45deg) translate(-8px, -8px) ;
+}
+
+.notification-title{
+    font-weight: lighter;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.notification-title .line-before, .notification-title .line-after{
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background: #fff;
+}
+.line-before{
+    top:50%;
+    left:-10px;
+}
+.line-after{
+    top:50%;
+    right:-10px;
+}
+.notification-content .notification{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.notification .message{
+    padding-right: 10px;
+}
+/* ---------------------------------------------------
     NOTIFICATION HEADER STYLE
 ----------------------------------------------------- */
 
@@ -101,10 +171,14 @@ h3, h4, h5 {
 .notification-count{
     position: absolute;
     border-radius: 50%;
-    background: #fff;
+    width: 20px;
+    height: 20px;
+    background: #990c0c;
     display: inline-block;
-    top: 18px;
-    right: 5px;
+    border: 3px solid #fff;
+    color: #fff;
+    top: 3px;
+    right: 0;
 }
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -120,8 +194,9 @@ h3, h4, h5 {
     max-width: 220px;
     min-height: 768px;
     /* background: rgba(14, 50, 109, 0.902); */
-    background: #0d808f;
+    background-color: #0d808f;
     color: #fff;
+    box-shadow: 8px 0 12px rgba(0 , 0, 0, 0.13);
     overflow: auto;
     align-items: stretch;
     transition: all 0.3s;
@@ -336,7 +411,7 @@ code {
 .info-box{
     background:#fff;
     padding:0;
-    height: 286.3px;
+    /* height: 286.3px; */
 }
 .info-box .info-box-title , .info-box .info-box-content{
    padding: 22px; 
@@ -505,6 +580,26 @@ code {
 }
 
 
+/* schedule */
+
+.schedule-card{
+    top: 8%;
+    right: -20%;
+    position: absolute;
+}
+
+
+
+/*----------------------------------------------------
+    WIDGET
+-----------------------------------------------------*/
+
+.widget{
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
 
 
@@ -535,6 +630,27 @@ code {
 /* ---------------------------------------------------
     HELPERS STYLE
 ----------------------------------------------------- */
+.bg-theme{
+    background-color: #0d808f;
+    color: #fff;
+}
+.bg-teal{
+    background-color: #03c1da;
+    color: #fff;
+}
+.text-teal{
+    color: #03c1da;
+}
+.text-theme{
+    color: #0d808f;
+}
+.btn-theme{
+    background-color: #0d808f;
+    color: #fff; 
+}
+.btn-theme:hover{
+    background-color: #0c5460;
+}
 .online{
     background-color:#09bd09;
 }
@@ -879,6 +995,9 @@ nav[aria-label="breadcrumb"].dot-separator .breadcrumb-item+.breadcrumb-item::be
     border: none;
 }
 
+input[type=time]{
+    border: none;
+}
 
 /* ---------------------------------------------------
     BOX STYLE
